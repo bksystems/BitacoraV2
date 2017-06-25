@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient android:angle="90" android:startColor="@color/magenta_secundario" android:centerColor="@color/magenta_primario" android:endColor="@color/magenta_secundario">
+
+    </gradient>
+    <padding android:top="1dp" android:left="1dp" android:right="1dp" android:bottom="1dp"></padding>
+    <stroke android:color="@color/contorno_listview" android:width="2dp"></stroke>
+    <corners android:radius="4dp"></corners>
+</shape>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.apps.movilidadcb.bitacorav2.FragmentsDetallesVisita.TabCamposPLFragment">
+
+    <TextView
+        android:id="@+id/plCampos_textView_titulo"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        style="@style/ListViewBitacoraTitulo"
+        android:layout_marginTop="5dp"
+        android:text="Elementos agregados"
+        android:layout_height="wrap_content" />
+
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_below="@+id/plCampos_textView_titulo"
+       android:layout_height="match_parent"
+       android:id="@+id/plCampos_listview_agregados">
+   </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+        app:fabSize="mini"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:id="@+id/plCampos_button_floatingActionButton"
+        app:elevation="0dp" />
+
+</RelativeLayout>

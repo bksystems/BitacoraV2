@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Tema creado para compartamos banco-->
+    <style name="AppThemeCompartamos" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialogBitacora" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--Color para los botones-->
+        <item name="colorAccent">@color/mango_primario</item>
+        <!--Color para los titulo y textos-->
+        <item name="android:textColorPrimary">@color/bitacora_semi_blanco</item>
+        <!--Color para el fondo-->
+        <item name="android:background">@color/magenta_secundario</item>
+    </style>
+
+    <style name="AppThemeCompartamos.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeCompartamos.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ListViewBitacora" parent="@android:style/Widget.ListView">
+        <item name="android:background">@drawable/listview_background_drawer</item>
+        <item name="android:divider">@color/mango_primario</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:selectableItemBackground">@color/magenta_secundario</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="ListViewBitacoraTitulo" parent="@android:style/Widget.EditText">
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:textColor">@color/bitacora_semi_blanco</item>
+        <item name="android:layout_marginBottom">1dp</item>
+
+        <item name="android:background">@drawable/listview_title_background_drawer</item>
+    </style>
+
+    <style name="EditTextBitacora" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">15dp</item>
+
+    </style>
+
+    <style name="SpinnerBitacora">
+
+    </style>
+
+    <style name="ButtonBitacora" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background_drawable</item>
+        <item name="android:textColor">@color/mango_primario</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:selectableItemBackground">@color/mango_secundario</item>
+        <item name="android:textColorHighlight">@color/mango_secundario</item>
+    </style>
+
+</resources>

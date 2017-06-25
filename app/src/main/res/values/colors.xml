@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b70071</color>
+    <color name="colorPrimaryDark">#c20076</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="prioridadAlta">#af0600</color>
+    <color name="prioridadMedia">#d49100</color>
+    <color name="prioridadBaja">#1d6c21</color>
+
+
+    <color name="magenta_primario">#b0005c</color>
+    <color name="magenta_secundario">#e00076</color>
+    <color name="mango_primario">#e7931a</color>
+    <color name="mango_secundario">#f7b223</color>
+    <color name="bitacora_semi_blanco">#eaeaea</color>
+    <color name="contorno_listview">@color/magenta_secundario</color>
+</resources>

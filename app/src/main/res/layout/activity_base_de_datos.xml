@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_base_de_datos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.movilidadcb.bitacorav2.BaseDeDatosActivity">
+
+    <include layout="@layout/app_toolbar_base" android:id="@+id/toolbar_settings_base_de_datos"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versión de base de datos:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/toolbar_settings_base_de_datos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/load_db_textView_version"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultima actualización de BD:"
+        android:id="@+id/textView23"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_below="@+id/load_db_textView_version"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/load_db_textView_fecha"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView23"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción de base de datos:"
+        android:id="@+id/textView25"
+        android:layout_marginTop="31dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_below="@+id/load_db_textView_fecha"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/load_db_textView_descripcion"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+</RelativeLayout>

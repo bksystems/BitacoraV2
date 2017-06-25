@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.movilidadcb.bitacorav2.FragmentsNavs.VisitaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:overScrollMode="always">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/visita_spinner_ruta"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/visita_spinner_oficina"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/visita_spinner_colaborador"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/visita_spinner_ruta"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/visita_spinner_oficina"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/visita_txt_date_selected"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/visita_spinner_colaborador"
+                android:hint="Fecha visita"
+                android:inputType="date"
+                android:textSize="12dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/visita_spinner_timpo_zona"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/visita_spinner_colaborador"
+                android:layout_toEndOf="@+id/visita_txt_date_selected"
+                android:layout_toRightOf="@+id/visita_txt_date_selected"
+                android:spinnerMode="dialog" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/visita_txt_date_selected"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/visita_txt_titulo_conocimientos"
+                        style="@style/ListViewBitacoraTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Conocimientos" />
+
+                    <ListView
+                        android:id="@+id/visita_listview_conocimientos"
+                        style="@style/ListViewBitacora"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/visita_txt_titulo_conocimientos" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/visita_txt_titulo_herramientas"
+                        style="@style/ListViewBitacoraTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Herramientas" />
+
+                    <ListView
+                        android:id="@+id/visita_listview_herramientas"
+                        style="@style/ListViewBitacora"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/visita_txt_titulo_herramientas" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

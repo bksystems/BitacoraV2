@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pl_campos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.movilidadcb.bitacorav2.PlCamposActivity">
+
+    <include
+        android:id="@+id/campos_pl_toolbar"
+        layout="@layout/app_toolbar_base"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/campos_pl_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+
+            <EditText
+                android:id="@+id/campos_pl_txt_hora_salida"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="Hora salida"
+                android:inputType="time"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_hora_llegada"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Hora llegada"
+                android:inputType="time"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_hora_visita"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:hint="Hora visita"
+                android:inputType="time"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+
+            <EditText
+                android:id="@+id/campos_pl_txt_idgrupo"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/campos_pl_txt_hora_salida"
+                android:hint="Id Grupo"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_ciclo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/campos_pl_txt_idgrupo"
+                android:hint="Ciclo"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_nombre_grupo"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/campos_pl_txt_idgrupo"
+                android:layout_alignBottom="@+id/campos_pl_txt_idgrupo"
+                android:layout_toEndOf="@+id/campos_pl_txt_idgrupo"
+                android:layout_toRightOf="@+id/campos_pl_txt_idgrupo"
+                android:hint="Nombre grupo"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_integrantes"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/campos_pl_txt_hora_visita"
+                android:hint="Integrantes"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_ruta"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/campos_pl_txt_nombre_grupo"
+                android:layout_toEndOf="@+id/campos_pl_txt_idgrupo"
+                android:layout_toRightOf="@+id/campos_pl_txt_idgrupo" />
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_tipo_visita"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/campos_pl_txt_tiempo_trayecto"
+                android:layout_toEndOf="@+id/campos_pl_txt_tiempo_trayecto"
+                android:layout_toRightOf="@+id/campos_pl_txt_tiempo_trayecto" />
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_inconsistencia"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/campos_pl_txt_tiempo_trayecto" />
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_tiempo_captura_coordenadas"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/campos_pl_spinner_inconsistencia" />
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_modulo"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/campos_pl_spinner_tipo_visita"
+                android:layout_toEndOf="@+id/campos_pl_spinner_inconsistencia"
+                android:layout_toRightOf="@+id/campos_pl_spinner_inconsistencia" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_latitud_longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/campos_pl_spinner_tiempo_captura_coordenadas"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/campos_pl_spinner_inconsistencia"
+                android:ems="10"
+                android:hint="Latitud - Longitud"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="11dp" />
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_tipo_telefonia"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_below="@id/campos_pl_spinner_tiempo_captura_coordenadas"></Spinner>
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_intensidad_senal"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/campos_pl_txt_latitud_longitud"></Spinner>
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_tipo_transporte"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/campos_pl_spinner_tipo_telefonia"></Spinner>
+
+            <Spinner
+                android:id="@+id/campos_pl_spinner_tipo_via"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/campos_pl_spinner_intensidad_senal"></Spinner>
+
+            <EditText
+                android:id="@+id/campos_pl_txt_costo_transporte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/campos_pl_spinner_tipo_transporte"
+                android:hint="$ transporte"
+                android:inputType="numberDecimal"
+                android:textSize="11dp" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_obeservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/campos_pl_txt_costo_transporte"
+                android:hint="Observaciones"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/campos_pl_txt_tiempo_trayecto"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:hint="Tiempo trayecto"
+                android:inputType="time"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textSize="13dp"
+                android:layout_below="@+id/campos_pl_spinner_ruta"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

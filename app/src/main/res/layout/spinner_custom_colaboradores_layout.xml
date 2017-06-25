@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="2dp" android:paddingRight="2dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_custom_colaboradores_image"
+        android:src="@drawable/ic_menu_camera"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_alignBottom="@+id/spinner_custom_colaboradores_puesto"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nombre colaborador"
+        android:id="@+id/spinner_custom_colaboradores_nombre"
+        android:textColor="@color/magenta_primario"
+        android:textStyle="bold"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:textSize="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spinner_custom_colaboradores_image"
+        android:layout_toEndOf="@+id/spinner_custom_colaboradores_image" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nomina"
+        android:id="@+id/spinner_custom_colaboradores_nomina"
+        android:textSize="9dp"
+        android:textColor="@color/magenta_secundario"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/spinner_custom_colaboradores_nombre"
+        android:layout_toRightOf="@+id/spinner_custom_colaboradores_image"
+        android:layout_toEndOf="@+id/spinner_custom_colaboradores_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Puesto colaborador"
+        android:id="@+id/spinner_custom_colaboradores_puesto"
+        android:textSize="9dp"
+        android:textColor="@color/magenta_secundario"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_below="@+id/spinner_custom_colaboradores_nombre"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/toolbar_settings_option_database_load" android:title="Cargar o remplazar"></item>
+    <item android:id="@+id/toolbar_settings_option_database_delete" android:title="Eliminar"></item>
+    <item android:id="@+id/toolbar_settings_option_database_extract" android:title="Extraer DB"></item>
+</menu>

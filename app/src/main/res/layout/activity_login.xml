@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.movilidadcb.bitacorav2.LoginActivity">
+
+    <include layout="@layout/app_toolbar_base" android:id="@+id/toolbar_settings_login"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar_settings_login">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_settings_login"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_below="@+id/login_img_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/login_txt_user"
+                android:hint="Usuario"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_below="@+id/login_txt_user"
+                android:layout_marginTop="5dp"
+                android:id="@+id/login_txt_password"
+                android:hint="Contraseña"
+                android:layout_marginLeft="50dp"
+                android:textAlignment="center"
+                android:layout_alignRight="@+id/login_txt_user"
+                android:layout_alignEnd="@+id/login_txt_user" />
+
+            <Button
+                android:text="Ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_txt_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                style="@style/ButtonBitacora"
+                android:id="@+id/login_btn_acces"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:padding="25dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="30dp"
+                android:id="@+id/login_img_icon"
+
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

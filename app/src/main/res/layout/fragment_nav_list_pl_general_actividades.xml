@@ -1,0 +1,27 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.movilidadcb.bitacorav2.FragmentsNavs.NavListPlGeneralActividadesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListViewBitacoraTitulo"
+        android:id="@+id/nav_pl_general_txt_titulo"
+        android:text="Visitas ejecutadas" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ListViewBitacora"
+        android:id="@+id/listview_nav_pl_general_actividades"
+        android:choiceMode="singleChoice"
+        android:text="Visitas ejecutadas"
+        android:layout_below="@+id/nav_pl_general_txt_titulo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
